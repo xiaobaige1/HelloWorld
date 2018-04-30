@@ -14,6 +14,7 @@ public class MainConfig {
 	
 	public static void main(String[] args) {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(MainConfig.class);
+		//利用容器发布事件
 		ctx.publishEvent(new MyEvents(ctx));
 	
 	}
